@@ -1,0 +1,191 @@
+/* ===================================
+   AST FITNESS NAVBAR STYLES
+   =================================== */
+
+.navbar {
+    background-color: var(--color-secondary-dark);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-tertiary-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all var(--transition-normal);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === BRAND/LOGO === */
+.navbar-brand {
+    flex-shrink: 0;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 800;
+    font-size: var(--font-size-xl);
+    transition: all var(--transition-normal);
+}
+
+.brand-link:hover {
+    color: var(--color-accent-red);
+    transform: scale(1.05);
+}
+
+.brand-link i {
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent-red);
+}
+
+/* === NAVIGATION MENU === */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: var(--space-lg);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 0.25rem;
+    transition: all var(--transition-normal);
+}
+
+.nav-link:hover {
+    color: var(--color-accent-red);
+    background-color: rgba(165, 48, 48, 0.1);
+}
+
+/* === DROPDOWN MENU === */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-secondary-dark);
+    border: 1px solid var(--color-tertiary-dark);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-normal);
+    min-width: 250px;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-accent-red);
+    color: var(--color-text-primary);
+    transform: translateX(5px);
+}
+
+.dropdown-item i {
+    color: var(--color-accent-orange);
+    width: 20px;
+    text-align: center;
+}
+
+/* === SOCIAL LINKS === */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-normal);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 0.25rem;
+}
+
+.social-link:hover {
+    color: var(--color-accent-red);
+    background-color: rgba(165, 48, 48, 0.1);
+}
+
+.social-handle {
+    font-weight: 500;
+}
+
+/* === MOBILE TOGGLE === */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-xs);
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text-primary);
+    transition: all var(--transition-normal);
+}

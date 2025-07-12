@@ -1,0 +1,185 @@
+/* ===================================
+   FITNESS WEBSITE FOUNDATION STYLES
+   Color scheme: Dark theme with red accents for AST FITNESS aesthetic
+   =================================== */
+
+:root {
+    /* === PRIMARY COLORS === */
+    --color-primary-dark: #090a14; /* Deepest dark - main backgrounds */
+    --color-secondary-dark: #151d28; /* Secondary dark - cards, sections */
+    --color-tertiary-dark: #202e37; /* Tertiary - hover states, borders */
+
+    /* === ACCENT COLORS === */
+    --color-accent-red: #a53030; /* Primary red - CTAs, highlights */
+    --color-accent-red-hover: #cf573c; /* Red hover state */
+    --color-accent-orange: #da863e; /* Orange-red - special elements */
+
+    /* === TEXT COLORS === */
+    --color-text-primary: #ebede9; /* High contrast text */
+    --color-text-secondary: #c7cfcc; /* Secondary text */
+    --color-text-muted: #a8b5b2; /* Labels, captions */
+
+    /* === SUPPORTING COLORS === */
+    --color-blue-accent: #3c5e8b; /* Links, info */
+    --color-success: #75a743; /* Success states */
+    --color-warning: #be772b; /* Warnings, highlights */
+
+    /* === SPACING SCALE === */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-2xl: 4rem; /* 64px */
+
+    /* === TYPOGRAPHY === */
+    --font-primary: "Montserrat", "Arial", sans-serif;
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 2rem; /* 32px */
+
+    /* === SHADOWS & EFFECTS === */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+
+    /* === TRANSITIONS === */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+
+    /* === BREAKPOINTS (for reference) === */
+    /* Mobile: 0px - 767px */
+    /* Tablet: 768px - 1023px */
+    /* Desktop: 1024px+ */
+}
+
+/* === BASE STYLES === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Account for fixed navbar */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+    padding-top: 70px;
+}
+
+/* === UTILITY CLASSES === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    background-color: var(--color-accent-red);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-red-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-accent-red);
+    color: var(--color-accent-red);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-accent-red);
+    color: var(--color-text-primary);
+}
+
+/* === ADDITIONAL BUTTON STYLES === */
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        var(--color-accent-red) 0%,
+        var(--color-accent-red-hover) 100%
+    );
+    box-shadow: 0 4px 15px rgba(165, 48, 48, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(
+        135deg,
+        var(--color-accent-red-hover) 0%,
+        var(--color-accent-red) 100%
+    );
+    box-shadow: 0 6px 20px rgba(165, 48, 48, 0.4);
+}
+
+/* === LAYOUT UTILITIES === */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.mb-sm {
+    margin-bottom: var(--space-sm);
+}
+.mb-md {
+    margin-bottom: var(--space-md);
+}
+.mb-lg {
+    margin-bottom: var(--space-lg);
+}
+.mb-xl {
+    margin-bottom: var(--space-xl);
+}
+
+.mt-sm {
+    margin-top: var(--space-sm);
+}
+.mt-md {
+    margin-top: var(--space-md);
+}
+.mt-lg {
+    margin-top: var(--space-lg);
+}
+.mt-xl {
+    margin-top: var(--space-xl);
+}
+
+/* === SECTION SPACING === */
+section {
+    position: relative;
+}
+
+section:not(.hero) {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+}
