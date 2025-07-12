@@ -14,7 +14,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'seal-app-s84el.ondigitalocean.app/'
+    'seal-app-s84el.ondigitalocean.app'
 ]
 
 # Application definition
