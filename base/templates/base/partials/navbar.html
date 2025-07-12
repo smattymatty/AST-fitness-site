@@ -1,4 +1,4 @@
-<!-- Navbar Component -->
+<!-- Epic Responsive Navbar Component -->
 <nav class="navbar" id="navbar">
     <div class="navbar-container">
         <!-- Logo/Brand -->
@@ -9,8 +9,8 @@
             </a>
         </div>
 
-        <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navbar-menu">
+        <!-- Desktop Navigation Menu -->
+        <div class="navbar-menu desktop-menu" id="navbar-menu">
             <ul class="navbar-nav">
                 <!-- About Dropdown -->
                 <li class="nav-item dropdown">
@@ -33,7 +33,7 @@
                     </div>
                 </li>
 
-                <!-- Additional nav items can be added here -->
+                <!-- Additional nav items -->
                 <li class="nav-item">
                     <a href="{% url 'home' %}" class="nav-link">Programs</a>
                 </li>
@@ -43,26 +43,101 @@
             </ul>
         </div>
 
-        <!-- Social Media & Mobile Toggle -->
-        <div class="navbar-actions">
-            <!-- Social Media Links -->
+        <!-- Desktop Social Media Links -->
+        <div class="navbar-actions desktop-social">
             <div class="social-links">
                 <a href="https://instagram.com/your_handle" class="social-link" target="_blank" rel="noopener">
                     <i class="fab fa-instagram"></i>
-                    <span class="social-handle">@AbhiSinghThakurrr</span>
+                    <span class="social-handle">@your_handle</span>
                 </a>
-                <a href="https://www.youtube.com/@AbhiSinghThakur" class="social-link" target="_blank" rel="noopener">
+                <a href="https://youtube.com/c/your_channel" class="social-link" target="_blank" rel="noopener">
                     <i class="fab fa-youtube"></i>
-                    <span class="social-handle">AbhiSinghThakur</span>
+                    <span class="social-handle">YourChannel</span>
                 </a>
             </div>
+        </div>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
-                <span class="toggle-line"></span>
-                <span class="toggle-line"></span>
-                <span class="toggle-line"></span>
-            </button>
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Mobile Navigation -->
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item">
+                    <a href="{% url 'home' %}" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+
+                <!-- Mobile About Dropdown -->
+                <li class="mobile-nav-item mobile-dropdown">
+                    <button class="mobile-nav-link mobile-dropdown-toggle" id="mobile-about-toggle">
+                        <i class="fas fa-user"></i>
+                        About
+                        <i class="fas fa-chevron-down mobile-chevron"></i>
+                    </button>
+                    <ul class="mobile-dropdown-menu" id="mobile-about-menu">
+                        <li>
+                            <a href="{% url 'home' %}" class="mobile-dropdown-link">
+                                <i class="fas fa-newspaper"></i>
+                                Featured in Articles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'home' %}" class="mobile-dropdown-link">
+                                <i class="fas fa-users"></i>
+                                Transformed Hundreds of Lives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'home' %}" class="mobile-dropdown-link">
+                                <i class="fas fa-certificate"></i>
+                                Government Certified
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="{% url 'home' %}" class="mobile-nav-link">
+                        <i class="fas fa-dumbbell"></i>
+                        Programs
+                    </a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="{% url 'home' %}" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Social Links -->
+            <div class="mobile-social">
+                <h4>Follow Me</h4>
+                <div class="mobile-social-links">
+                    <a href="https://instagram.com/your_handle" class="mobile-social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>@your_handle</span>
+                    </a>
+                    <a href="https://youtube.com/c/your_channel" class="mobile-social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                        <span>YourChannel</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
