@@ -1,0 +1,68 @@
+<!-- Navbar Component -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+            <a href="{% url 'home' %}" class="brand-link">
+                <i class="fas fa-dumbbell"></i>
+                <span class="brand-text">AST FITNESS</span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navbar-menu">
+            <ul class="navbar-nav">
+                <!-- About Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown">
+                        About <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" id="aboutDropdownMenu">
+                        <a href="{% url 'home' %}" class="dropdown-item">
+                            <i class="fas fa-newspaper"></i>
+                            Featured in Articles
+                        </a>
+                        <a href="{% url 'home' %}" class="dropdown-item">
+                            <i class="fas fa-users"></i>
+                            Transformed Hundreds of Lives
+                        </a>
+                        <a href="{% url 'home' %}" class="dropdown-item">
+                            <i class="fas fa-certificate"></i>
+                            Government Certified
+                        </a>
+                    </div>
+                </li>
+
+                <!-- Additional nav items can be added here -->
+                <li class="nav-item">
+                    <a href="{% url 'home' %}" class="nav-link">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'home' %}" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Social Media & Mobile Toggle -->
+        <div class="navbar-actions">
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://instagram.com/your_handle" class="social-link" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                    <span class="social-handle">@AbhiSinghThakurrr</span>
+                </a>
+                <a href="https://www.youtube.com/@AbhiSinghThakur" class="social-link" target="_blank" rel="noopener">
+                    <i class="fab fa-youtube"></i>
+                    <span class="social-handle">AbhiSinghThakur</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+        </div>
+    </div>
+</nav>

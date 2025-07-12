@@ -1,0 +1,334 @@
+/* ===================================
+   AST FITNESS FOOTER STYLES
+   =================================== */
+
+.footer {
+    background: linear-gradient(
+        135deg,
+        var(--color-primary-dark) 0%,
+        var(--color-secondary-dark) 100%
+    );
+    border-top: 1px solid var(--color-tertiary-dark);
+    color: var(--color-text-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-accent-red),
+        transparent
+    );
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* === MAIN FOOTER CONTENT === */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: var(--space-2xl);
+    padding: var(--space-2xl) 0;
+}
+
+.footer-section h4 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--color-accent-red);
+}
+
+/* === BRAND SECTION === */
+.footer-brand .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.footer-brand .brand-logo i {
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent-red);
+}
+
+.footer-brand .brand-logo h3 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0;
+}
+
+.brand-description {
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-secondary);
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-secondary-dark);
+    border: 1px solid var(--color-tertiary-dark);
+    border-radius: 50%;
+    color: var(--color-text-muted);
+    transition: all var(--transition-normal);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: var(--color-accent-red);
+    border-color: var(--color-accent-red);
+    color: var(--color-text-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(165, 48, 48, 0.3);
+}
+
+/* === FOOTER LINKS === */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-sm);
+}
+
+.footer-links a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    position: relative;
+    display: inline-block;
+}
+
+.footer-links a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-accent-red);
+    transition: width var(--transition-normal);
+}
+
+.footer-links a:hover {
+    color: var(--color-text-primary);
+    transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+    width: 100%;
+}
+
+/* === CONTACT INFO === */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.footer-contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.footer-contact .contact-item i {
+    color: var(--color-accent-red);
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* === FOOTER BOTTOM === */
+.footer-bottom {
+    border-top: 1px solid var(--color-tertiary-dark);
+    padding: var(--space-lg) 0;
+    background: rgba(9, 10, 20, 0.5);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.copyright p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.footer-credits {
+    text-align: right;
+}
+
+.footer-credits p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.footer-credits .powered-by {
+    margin-bottom: var(--space-xs);
+}
+
+.spellbook-link {
+    color: var(--color-blue-accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.spellbook-link::before {
+    content: "🪄";
+    margin-right: 4px;
+    font-size: 0.9em;
+}
+
+.spellbook-link:hover {
+    color: var(--color-accent-red);
+    text-shadow: 0 0 8px rgba(165, 48, 48, 0.5);
+}
+
+.made-with {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        text-align: center;
+    }
+
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-credits {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        padding: var(--space-lg) 0;
+    }
+
+    .footer-bottom {
+        padding: var(--space-md) 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* === FOOTER ANIMATIONS === */
+@media (prefers-reduced-motion: no-preference) {
+    .footer-section {
+        animation: fadeInUp 0.6s ease-out;
+        animation-fill-mode: both;
+    }
+
+    .footer-section:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    .footer-section:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    .footer-section:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    .footer-section:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+}
+
+/* === HOVER EFFECTS === */
+.footer-section {
+    transition: all var(--transition-normal);
+}
+
+.footer-section:hover {
+    transform: translateY(-2px);
+}
+
+/* === ACCENT GLOW EFFECT === */
+.footer-brand .brand-logo:hover i {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--color-accent-red);
+    }
+    to {
+        text-shadow:
+            0 0 20px var(--color-accent-red),
+            0 0 30px var(--color-accent-red);
+    }
+}

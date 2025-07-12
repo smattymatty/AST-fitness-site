@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Certified Personal Trainer, Nutrition & Supplement Consultant. Expert in Calisthenics & Martial Arts training in Hindi and English.">
+    <meta name="keywords" content="personal trainer, calisthenics, martial arts, nutrition, fitness, supplement consultant">
+    <meta name="author" content="Abhi - Certified Fitness Professional">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% block og_title %}AST FITNESS Training with Certified Expert{% endblock %}">
+    <meta property="og:description" content="Transform your body with expert guidance from a certified personal trainer and martial arts champion.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% block twitter_title %}AST FITNESS Training{% endblock %}">
+
+    <title>{% block title %}AST Fitness - Certified Personal Trainer & Martial Arts Expert{% endblock %}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% load static %}{% static 'base/css/styles.css' %}">
+    <link rel="stylesheet" href="{% load static %}{% static 'base/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% load static %}{% static 'base/css/footer.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'base/partials/navbar.html' %}
+
+    <!-- Main Content -->
+    <main id="main-content">
+        {% block content %}
+        <!-- Page content goes here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'base/partials/footer.html' %}
+
+    <!-- JavaScript -->
+    {% block extra_js %}{% endblock %}
+
+    <!-- Base JavaScript for interactions -->
+    <script src="{% load static %}{% static 'base/js/main.js' %}"></script>
+</body>
+</html>

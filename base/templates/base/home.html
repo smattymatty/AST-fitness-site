@@ -1,0 +1,361 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}AST Fitness Training - Certified Personal Trainer & Martial Arts Champion{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'base/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Transform Your Body.<br>
+                    <span class="text-accent">Master Your Mind.</span>
+                </h1>
+                <!-- Epic Credential Badges -->
+                <div class="hero-credentials">
+                    <div class="credential-badge primary">
+                        <i class="fas fa-certificate"></i>
+                        <span>Government Certified Personal Trainer</span>
+                    </div>
+                    <div class="credential-badge secondary">
+                        <i class="fas fa-leaf"></i>
+                        <span>Nutrition Expert</span>
+                    </div>
+                    <div class="credential-badge accent">
+                        <i class="fas fa-fist-raised"></i>
+                        <span>Martial Arts Champion</span>
+                    </div>
+                </div>
+
+                <div class="hero-specialties">
+                    <div class="specialty-tag">
+                        <i class="fas fa-dumbbell"></i>
+                        Calisthenics & Combat Training
+                    </div>
+                    <div class="specialty-tag">
+                        <i class="fas fa-globe"></i>
+                        Hindi & English Instruction
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Lives Transformed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number-n">1st</span>
+                        <span class="stat-label">Rank Martial Arts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Certified</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Start Your Transformation</a>
+                    <a href="#services" class="btn btn-outline">Explore Programs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Credentials Section -->
+<section class="credentials" id="credentials">
+    <div class="container">
+        <div class="section-header">
+            <h2>Proven Expertise You Can Trust</h2>
+            <p>Government certified with championship credentials</p>
+        </div>
+
+        <div class="credentials-grid">
+            <div class="credential-card">
+                <div class="credential-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Government Certified</h3>
+                <p>Official Personal Trainer certification from recognized government institutions</p>
+            </div>
+
+            <div class="credential-card">
+                <div class="credential-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Martial Arts Champion</h3>
+                <p>First rank holder with years of competitive martial arts experience</p>
+            </div>
+
+            <div class="credential-card">
+                <div class="credential-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h3>Nutrition Expert</h3>
+                <p>Certified nutrition and supplement consultant for optimal performance</p>
+            </div>
+
+            <div class="credential-card">
+                <div class="credential-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3>Media Featured</h3>
+                <p>Recognized expert featured in fitness and health publications</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Elite Training Programs</h2>
+            <p>Comprehensive fitness solutions in Hindi and English</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Calisthenics Training</h3>
+                <p>Master bodyweight exercises for functional strength, flexibility, and incredible physique development.</p>
+                <ul class="service-features">
+                    <li>Progressive skill building</li>
+                    <li>Bodyweight mastery</li>
+                    <li>Functional movements</li>
+                </ul>
+            </div>
+
+            <div class="service-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-icon">
+                    <i class="fas fa-fist-raised"></i>
+                </div>
+                <h3>Martial Arts Instruction</h3>
+                <p>Learn from a champion fighter. Develop discipline, self-defense skills, and mental toughness.</p>
+                <ul class="service-features">
+                    <li>Championship techniques</li>
+                    <li>Self-defense mastery</li>
+                    <li>Mental discipline</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Nutrition Consulting</h3>
+                <p>Personalized nutrition plans and supplement guidance for optimal performance and results.</p>
+                <ul class="service-features">
+                    <li>Custom meal plans</li>
+                    <li>Supplement protocols</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Success Stories Section -->
+<section class="success-stories">
+    <div class="container">
+        <div class="section-header">
+            <h2>Transformation Success Stories</h2>
+            <p>Real results from real people</p>
+        </div>
+
+        <div class="stories-grid">
+            <div class="story-card">
+                <div class="story-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <blockquote>
+                    "Amazing trainer, helped me in my journey, very friendly and humble in nature, he helped me in gaining my weight which seemed to be impossible i was trying for 3 years but nothing came out of it, i followed the diet plan he gave me and there were visible results in 3-4 months."
+                </blockquote>
+                <cite>— Ankit Singh</cite>
+                <a href="https://g.co/kgs/F9EUZC3">Google Review</a>
+            </div>
+
+            <div class="story-card">
+                <div class="story-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <blockquote>
+                    "AST is one of the best fitness coaches. He is a very respectful, honest, and patient coach who understands your problems and personalises the training program according to your goals and needs. He has all the knowledge and was able to answer all my questions on the spot. I would whole-heartedly recommend him to anyone in need of becoming fit and living a better life."
+                </blockquote>
+                <cite>— Yashpal</cite>
+                <a href="https://g.co/kgs/a25S5yj">Google Review</a>
+            </div>
+
+            <div class="story-card">
+                <div class="story-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <blockquote>
+                    "I’ve been training with AST for a couple of months now and am really happy with the results so far. AST is an excellent trainer and takes the time to explain the work you’re doing and how it will impact your goals. He is always friendly and make you feel very comfortable - I would highly recommend.🥇"
+                </blockquote>
+                <cite>— Naman Sharma</cite>
+                <a href="https://g.co/kgs/XaXNf4T">Google Review</a>
+            </div>
+        </div>
+
+        <div class="success-metrics">
+            <div class="metric">
+                <span class="metric-number">500+</span>
+                <span class="metric-label">Clients Transformed</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">95%</span>
+                <span class="metric-label">Goal Achievement Rate</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">8</span>
+                <span class="metric-label">Years Experience</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">2</span>
+                <span class="metric-label">Languages</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Preview Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Meet Your Transformation Coach</h2>
+                <p class="lead">
+                    As a government-certified personal trainer and martial arts champion, I've dedicated my life to helping others unlock their potential through fitness, nutrition, and mental discipline.
+                </p>
+                <p>
+                    My unique combination of calisthenics expertise, martial arts mastery, and nutrition science provides a holistic approach to transformation. Whether you speak Hindi or English, I'll guide you on a journey that transforms not just your body, but your entire mindset.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-award"></i>
+                        <span>Government Certified Trainer</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-medal"></i>
+                        <span>Martial Arts Champion</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-globe"></i>
+                        <span>Bilingual Instruction</span>
+                    </div>
+                </div>
+                <a href="{% url 'home' %}" class="btn btn-outline">Learn More About Me</a>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-tie"></i>
+                    <p>Professional Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section" id="contact">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Life?</h2>
+            <p class="cta-subtitle">
+                Join hundreds of others who have achieved incredible results with expert guidance
+            </p>
+
+            <div class="cta-options">
+                <div class="cta-option">
+                    <h3>Start Training Today</h3>
+                    <p>Get personalized coaching and nutrition plans</p>
+                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                </div>
+
+                <div class="cta-option">
+                    <h3>Follow the Journey</h3>
+                    <p>Subscribe for amazing fitness content and tips</p>
+                    <div class="social-cta">
+                        <a href="https://youtube.com/c/your_channel" class="btn btn-youtube">
+                            <i class="fab fa-youtube"></i> Subscribe to Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@epicfitness.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Available for Online & In-Person Training</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Smooth scroll for hero scroll indicator
+document.querySelector('.hero-scroll').addEventListener('click', function() {
+    document.querySelector('#credentials').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+// Animate numbers on scroll
+function animateNumbers() {
+    const numbers = document.querySelectorAll('.stat-number, .metric-number');
+    numbers.forEach(number => {
+        const value = parseInt(number.textContent.replace(/\D/g, ''));
+        if (value) {
+            let current = 0;
+            const increment = value / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= value) {
+                    number.textContent = number.textContent.replace(/\d+/, value);
+                    clearInterval(timer);
+                } else {
+                    number.textContent = number.textContent.replace(/\d+/, Math.floor(current));
+                }
+            }, 20);
+        }
+    });
+}
+
+// Trigger animation when section is visible
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateNumbers();
+            observer.disconnect();
+        }
+    });
+});
+
+observer.observe(document.querySelector('.hero-stats'));
+</script>
+{% endblock %}
