@@ -3,8 +3,8 @@
 import multiprocessing
 import os
 
-# Server socket
-bind = "0.0.0.0:8080"
+# Server socket - UPDATED FOR DEPLOYMENT PLATFORM
+bind = "0.0.0.0:8080"  # Changed to match your platform's expectations
 backlog = 2048
 
 # Worker processes
@@ -30,14 +30,5 @@ access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
 # Process naming
 proc_name = "epic_fitness_gunicorn"
 
-# Daemon mode (set to True for background process)
+# Daemon mode
 daemon = False
-
-# User/group to run as (uncomment and set for production)
-# user = "www-data"
-# group = "www-data"
-
-# Security
-limit_request_line = 4094
-limit_request_fields = 100
-limit_request_field_size = 8190
