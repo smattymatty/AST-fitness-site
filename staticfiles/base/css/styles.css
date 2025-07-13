@@ -5,14 +5,14 @@
 
 :root {
     /* === PRIMARY COLORS === */
-    --color-primary-dark: #090a14; /* Deepest dark - main backgrounds */
-    --color-secondary-dark: #151d28; /* Secondary dark - cards, sections */
-    --color-tertiary-dark: #202e37; /* Tertiary - hover states, borders */
+    --color-primary-dark: #0f0f0f; /* Deepest dark - main backgrounds */
+    --color-secondary-dark: #141414 ; /* Secondary dark - cards, sections */
+    --color-tertiary-dark: #252526; /* Tertiary - hover states, borders */
 
     /* === ACCENT COLORS === */
-    --color-accent-red: #a53030; /* Primary red - CTAs, highlights */
-    --color-accent-red-hover: #cf573c; /* Red hover state */
-    --color-accent-orange: #da863e; /* Orange-red - special elements */
+    --color-accent-red: #bc4241; /* Primary red - CTAs, highlights */
+    --color-accent-red-hover: #df4d3e; /* Red hover state */
+    --color-accent-orange: #fa782d; /* Orange-red - special elements */
 
     /* === TEXT COLORS === */
     --color-text-primary: #ebede9; /* High contrast text */
@@ -21,8 +21,8 @@
 
     /* === SUPPORTING COLORS === */
     --color-blue-accent: #3c5e8b; /* Links, info */
-    --color-success: #75a743; /* Success states */
-    --color-warning: #be772b; /* Warnings, highlights */
+    --color-success: #777b3c; /* Success states */
+    --color-warning: #f5ba2e; /* Warnings, highlights */
 
     /* === SPACING SCALE === */
     --space-xs: 0.5rem; /* 8px */
